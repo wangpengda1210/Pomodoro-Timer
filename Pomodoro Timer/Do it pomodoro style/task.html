@@ -1,0 +1,39 @@
+<h2 style="text-align: center;">Android Features</h2>
+
+<p><strong>Custom View: </strong></p>
+
+<p>Use this example as a baseline: <br>
+    <a target="_blank" href="https://medium.com/@mgouline/drawing-an-animated-timer-in-android-65cf4c58e49b" rel="noopener noreferrer nofollow">https://medium.com/@mgouline/drawing-an-animated-timer-in-android-65cf4c58e49b</a></p>
+
+<p>Here is a really advanced example; however, it can be helpful for deeper understanding: <br>
+    <a target="_blank" href="https://youtube.com/watch?v=4NNmMO8Aykw&amp;list=LLVLL6s5YkLLTtkRq1puOfDA&amp;index=19&amp;t=962s" rel="noopener noreferrer nofollow">https://youtube.com/watch?v=4NNmMO8Aykw&amp;list=LLVLL6s5YkLLTtkRq1puOfDA&amp;index=19&amp;t=962s</a></p>
+
+<p><strong>Canvas </strong>(<a target="_blank" href="https://proandroiddev.com/android-bring-life-to-your-custom-view-8604ab3967b3" rel="noopener noreferrer nofollow">https://proandroiddev.com/android-bring-life-to-your-custom-view-8604ab3967b3</a> - short review of canvas architecture): used for drawing UI components on the screen. If you want to create a custom view with a particular shape, color and animation, you should get familiar with working on Canvas. The link above shows how you can draw on Canvas.</p>
+
+<h2 style="text-align: center;">Description</h2>
+
+<p>In this stage, you should implement your custom view (name this class <code class="java">TimerView</code> and put it into <code class="java">org.hyperskill.pomodoro.timer</code> package).</p>
+
+<p>This class should contain <code class="java">String getText()</code> and <code class="java">int getColor()</code> methods.</p>
+
+<p>It should work as follows:</p>
+
+<ol>
+    <li>TimerView should do N "work" rounds and N-1 "rest" rounds and then stop. </li>
+    <li>"work" and "rest" rounds should follow one another, starting from "work" round.</li>
+    <li>TimerView is red during a "work" round </li>
+    <li>TimerView is green during a "rest" round</li>
+    <li>After the last "work" round TimerView is yellow</li>
+</ol>
+
+<p>You may implement an animation of this TimerView, like a circle in the image below, but the easiest way is just filling up the space of TimerView with plain color.</p>
+
+<p>Replace TextView from last steps to TimerView, with id <code class="java">timerView</code>.</p>
+
+<h2 style="text-align: center;">Result</h2>
+
+<p>At the end of the stage, you should get something line in the picture below:</p>
+
+<p> </p>
+
+<p style="text-align: center;"><img alt="" height="335" src="https://ucarecdn.com/a5b1cc78-9594-4ddd-8f63-2d365a4ae7fe/" width="592"></p>

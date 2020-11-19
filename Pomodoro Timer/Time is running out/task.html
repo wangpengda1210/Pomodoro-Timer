@@ -1,0 +1,72 @@
+<h2 style="text-align: center;">Android Features</h2>
+
+<p><strong>Resources </strong>(<a target="_blank" href="https://developer.android.com/guide/topics/resources/providing-resources?hl=en" rel="noopener noreferrer nofollow">https://developer.android.com/guide/topics/resources/providing-resources?hl=en</a>): Android application code should be very flexible so that it works on different devices. Resources and their usage are most essential for this feature. Adaptive layouts, i18e, definitions of constants and many other features can be easily added through resources. The closest thing to resources is <code class="language-xml">.properties</code> files in Java, but resources can also be images, icons, xml files, and other files with different extensions. The link is an overview of this beautiful feature.</p>
+
+<p>In Android, there is <code class="language-xml">R</code> class for providing resources. Resources in code are just <code class="language-xml">R</code>-class constants. For example, class <code class="language-xml">Integer</code> in Java has a constant <code class="language-xml">MAX_VALUE</code> and in code you use it like this: <code class="language-xml">Integer.MAX_VALUE</code></p>
+
+<p>Assume you have a file in <code class="language-xml">resources/values/strings.xml</code>:</p>
+
+<pre><code class="language-xml">&lt;string name="some_string"&gt;Resources&lt;/string&gt;</code></pre>
+
+<p>Then you can get the string in your code:</p>
+
+<pre><code class="language-java">R.string.some_string</code></pre>
+
+<p>Now you can understand a line which creates Android studio by default using <code class="language-xml">onCreate</code> method:</p>
+
+<pre><code class="language-java">setContentView(R.layout.activity_main);</code></pre>
+
+<p>This line sets up the content view to your <code class="language-xml">MainActivity</code> by getting the layout from resources.</p>
+
+<h2 style="text-align: center;">Description</h2>
+
+<p>In this stage, you should add a simple timer logic in the app.</p>
+
+<p>Add functionality to Start and Reset buttons. TextView should  show the remaining time in a format <code class="language-xml">"mm:ss"</code> and behaves as follows:</p>
+
+<ol>
+    <li>Initial state: in TextView - <code class="language-xml">"00:03"</code>.</li>
+    <li>After pressing the Start button: the time in TextView starts counting down to <code class="language-xml">"00:00"</code>.</li>
+    <li>After pressing the Reset button: the time in TextView is set to <code class="language-xml">"00:03"</code> and should not decrease until the Start button is pressed again.</li>
+    <li>If Start is pressed while time is decreasing, TextView should behave as described in step 2.</li>
+    <li>If Reset is pressed while time is decreasing, TextView should behave as described in step 3.</li>
+</ol>
+
+<h2 style="text-align: center;">Hints</h2>
+
+<p>1. This functionality can be implemented in different ways, but the simplest way is using <code class="language-xml">Timer</code> from <code class="language-xml">java.util.Timer</code> (<a target="_blank" href="https://www.baeldung.com/java-timer-and-timertask" rel="noopener noreferrer nofollow">https://www.baeldung.com/java-timer-and-timertask</a>) with <code class="language-xml">java.util.Calendar</code> (<a target="_blank" href="https://www.mkyong.com/java/java-date-and-calendar-examples/" rel="noopener noreferrer nofollow">https://www.mkyong.com/java/java-date-and-calendar-examples/</a>).</p>
+
+<p>2. You can get the button in the code using <code class="language-xml">findViewById</code> method.</p>
+
+<pre><code class="language-java">final Button startButton = findViewById(R.id.startButton);</code></pre>
+
+<p>3. Set up a text in TextView after clicking the button:</p>
+
+<pre><code class="language-java">resetButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        timerView.setText("text");
+    }
+});</code></pre>
+
+<p>4. Run the code in a UI thread: UI components in Android work in the UI thread and are not thread-safe, so in order to make changes in a UI component, we have to run changes in the UI thread.<br>
+    (<a target="_blank" href="https://www.myandroidsolutions.com/2014/04/06/run-code-on-mainui-thread-on-android/#.XH5twYgzZPY" rel="noopener noreferrer nofollow">https://www.myandroidsolutions.com/2014/04/06/run-code-on-mainui-thread-on-android/#.XH5twYgzZPY</a>):</p>
+
+<p>Notice that the previous example is incorrect - listeners aren't executed in the UI thread. So, instead of <code class="language-xml">timerView.setText("text");</code> you should write as follows:</p>
+
+<pre><code class="language-java">runOnUiThread(new Runnable() {
+    @Override
+    public void run () {
+        timerView.setText("text");
+    }
+});</code></pre>
+
+<h2 style="text-align: center;">Results</h2>
+
+<p>You can see what you should end with in the pictures below:</p>
+
+<p style="text-align: center;"><img alt="" height="393" src="https://ucarecdn.com/8b46ed2b-dc9e-47d8-a678-fafc9af47ce3/" width="223"></p>
+
+<p> </p>
+
+<p style="text-align: center;"><img alt="" height="405" src="https://ucarecdn.com/21b60126-c6cc-4b6e-9da3-b214c6f0e1fe/" width="228"></p>

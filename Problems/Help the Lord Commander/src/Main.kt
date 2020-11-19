@@ -1,0 +1,1 @@
+print(beyondTheWall.contentEquals(backFromTheWall))

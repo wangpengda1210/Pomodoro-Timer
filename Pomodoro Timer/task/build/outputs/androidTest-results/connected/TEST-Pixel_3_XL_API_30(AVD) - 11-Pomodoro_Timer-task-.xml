@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.hyperskill.pomodoro.ExampleInstrumentedTest" tests="12" failures="0" errors="0" skipped="0" time="99.514" timestamp="2020-11-18T09:28:13" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_3_XL_API_30(AVD) - 11" />
+    <property name="flavor" value="" />
+    <property name="project" value="Pomodoro_Timer-task" />
+  </properties>
+  <testcase name="textViewExist" classname="org.hyperskill.pomodoro.ExampleInstrumentedTest" time="1.57" />
+  <testcase name="resetButtonExist" classname="org.hyperskill.pomodoro.ExampleInstrumentedTest" time="1.076" />
+  <testcase name="startButtonExist" classname="org.hyperskill.pomodoro.ExampleInstrumentedTest" time="1.7" />
+  <testcase name="sendNotification" classname="org.hyperskill.pomodoro.NotificationInstrumentedTest" time="10.256" />
+  <testcase name="openDialog" classname="org.hyperskill.pomodoro.SettingButtonInstrumentedTest" time="1.548" />
+  <testcase name="settingButtonExist" classname="org.hyperskill.pomodoro.SettingButtonInstrumentedTest" time="0.702" />
+  <testcase name="setRestTime" classname="org.hyperskill.pomodoro.SettingButtonInstrumentedTest" time="16.416" />
+  <testcase name="setWorkTime" classname="org.hyperskill.pomodoro.SettingButtonInstrumentedTest" time="12.617" />
+  <testcase name="interruptTimer" classname="org.hyperskill.pomodoro.TimerStateInstrumentedTest" time="18.48" />
+  <testcase name="resetTimer" classname="org.hyperskill.pomodoro.TimerStateInstrumentedTest" time="5.342" />
+  <testcase name="startTimer" classname="org.hyperskill.pomodoro.TimerStateInstrumentedTest" time="16.637" />
+  <testcase name="timerViewExist" classname="org.hyperskill.pomodoro.TimerStateInstrumentedTest" time="1.151" />
+</testsuite>

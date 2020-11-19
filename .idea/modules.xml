@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pomodoro_Timer.iml" filepath="$PROJECT_DIR$/.idea/modules/Pomodoro_Timer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pomodoro Timer/task/Pomodoro_Timer.Pomodoro_Timer-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Pomodoro Timer/task/Pomodoro_Timer.Pomodoro_Timer-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Adding arrays/Pomodoro_Timer.Problems-Adding_arrays.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Adding arrays/Pomodoro_Timer.Problems-Adding_arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Empty/Pomodoro_Timer.Problems-Empty.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Empty/Pomodoro_Timer.Problems-Empty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Guard On The Gate/Pomodoro_Timer.Problems-Guard_On_The_Gate.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Guard On The Gate/Pomodoro_Timer.Problems-Guard_On_The_Gate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Help the Lord Commander/Pomodoro_Timer.Problems-Help_the_Lord_Commander.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Help the Lord Commander/Pomodoro_Timer.Problems-Help_the_Lord_Commander.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Yet another array/Pomodoro_Timer.Problems-Yet_another_array.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Yet another array/Pomodoro_Timer.Problems-Yet_another_array.iml" />
+    </modules>
+  </component>
+</project>

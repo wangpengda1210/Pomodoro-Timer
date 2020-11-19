@@ -1,0 +1,30 @@
+<h2 style="text-align: center;">Android Features</h2>
+
+<p><strong>Inflate, LayoutInflater:</strong></p>
+
+<p><a target="_blank" href="https://gerardnico.com/android/inflate" rel="noopener noreferrer nofollow">https://gerardnico.com/android/inflate</a><br>
+    <a target="_blank" href="https://startandroid.ru/en/lessons/570-lesson-40-learning-to-use-layoutinflater.html" rel="noopener noreferrer nofollow">https://startandroid.ru/en/lessons/570-lesson-40-learning-to-use-layoutinflater.html</a></p>
+
+<p>before we create a static UI, let's put a view on the screen while your app is working. To do that, we can create a view through the code: just use the addView method (<a target="_blank" href="https://startandroid.ru/ru/uroki/vse-uroki-spiskom/49-16-layoutparams.html" rel="noopener noreferrer nofollow">https://startandroid.ru/ru/uroki/vse-uroki-spiskom/49-16-layoutparams.html</a>). This approach is not very convenient: our code becomes dirty and high coupled. The best way to create a new view on the screen is getting it from xml, like Activity. The links above show how to do that.</p>
+
+<p><strong>AlertDialog </strong>(<a target="_blank" href="https://developer.android.com/guide/topics/ui/dialogs?hl=en" rel="noopener noreferrer nofollow">https://developer.android.com/guide/topics/ui/dialogs?hl=en</a>): sometimes we want to show something in front of the screen; in this case, we can use AlertDialog. This thing appears in front of the screen; it can contain views, and we can set up the behavior of our app depending on events in this dialog box. The link describes this approach.</p>
+
+<h2 style="text-align: center;">Description</h2>
+
+<p>In this stage you should set up periods in seconds of "work" and "rest" rounds via AlertDialog with two EditText’s.<br>
+    Add Button with text <code class="java">"Settings"</code> and id <code class="java">settingButton</code>. AlertDialog should appear after clicking this button. AlertDialog should have:</p>
+
+<ol>
+    <li>EditText with id <code class="java">workTime</code></li>
+    <li>EditText with ID <code class="java">restTime</code></li>
+    <li>Button with a text <code class="java">"OK"</code></li>
+    <li>Button with a text <code class="java">"Cancel"</code></li>
+</ol>
+
+<p>If there is a number in EditText with id <code class="java">workTime</code> and the user clicks <code class="java">"OK"</code>, set the period of "work" as the number of seconds, just like in EditText and AlertDialog. The process is the same for <code class="java">restTime</code>. If a user clicks on <code class="java">"Cancel"</code> button, only AlertDialog closes.</p>
+
+<h2 style="text-align: center;">Result</h2>
+
+<p>The workflow should be like on the screens below:</p>
+
+<p style="text-align: center;"><img alt="" height="384" src="https://ucarecdn.com/385c16b0-167d-4a28-a1b7-e0782e3d626e/" width="640"></p>

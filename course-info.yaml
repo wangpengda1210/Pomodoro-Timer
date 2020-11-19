@@ -1,0 +1,17 @@
+type: hyperskill
+title: Pomodoro Timer
+language: English
+summary: 'Human mind is a restless wanderer. Whenever you try to concentrate and get
+  some tasks done, it wanders off to the lands unknown, and then your hand reaches
+  out for the phone and you forget all about the task… Relatable, isn’t it? Alas,
+  you can’t program concentration. But you can program a special app that helps you
+  stay on track: Pomodoro is probably the most famous example. In this project, you
+  will make a Pomodoro timer designed to manage your time and help you be more productive:
+  it smartly divides your time into work and rest periods. Time is precious. Time
+  is money. Time is Pomodoro.<br/><br/>Learn more at <a href="https://hyperskill.org">https://hyperskill.org/projects/72</a>'
+programming_language: Kotlin
+environment: Android
+content:
+- Pomodoro Timer
+- Problems
+mode: Study
